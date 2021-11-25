@@ -43,7 +43,7 @@ const Page = ({
 						</Link>
 					)}
 					{nextSection && (
-						<Link to={`/${previousSection.route}`}>
+						<Link to={`/${nextSection.route}`}>
 							<Button
 								fontSize="sm"
 								colorScheme={color1}
