@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Box, Button, HStack, ScaleFade } from "@chakra-ui/react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { color1 } from "../../App";
 import Header from "./Header";
@@ -15,14 +15,13 @@ const Page = ({
 	previousSection,
 	nextSection,
 }) => {
-    const fadeIn = useRef();
+	const fadeIn = useRef();
 	useEffect(() => {
 		fadeIn.current = true;
 		return () => {
 			fadeIn.current = false;
 		};
 	}, []);
-	const navigate = useNavigate();
 	return (
 		<Box minH="100vh" bgColor={`${color1}.100`}>
 			<Header />
@@ -33,24 +32,26 @@ const Page = ({
 				</Box>
 				<HStack justifyContent="space-around" paddingBottom="100px">
 					{previousSection && (
-						<Button
-							fontSize="sm"
-							colorScheme={color1}
-							leftIcon={<ArrowBackIcon />}
-							onClick={() => navigate(`/${previousSection.route}`)}
-						>
-							{previousSection.name}
-						</Button>
+						<Link to={`/${previousSection.route}`}>
+							<Button
+								fontSize="sm"
+								colorScheme={color1}
+								leftIcon={<ArrowBackIcon />}
+							>
+								{previousSection.name}
+							</Button>
+						</Link>
 					)}
 					{nextSection && (
-						<Button
-							fontSize="sm"
-							colorScheme={color1}
-							rightIcon={<ArrowForwardIcon />}
-							onClick={() => navigate(`/${nextSection.route}`)}
-						>
-							{nextSection.name}
-						</Button>
+						<Link to={`/${previousSection.route}`}>
+							<Button
+								fontSize="sm"
+								colorScheme={color1}
+								rightIcon={<ArrowForwardIcon />}
+							>
+								{nextSection.name}
+							</Button>
+						</Link>
 					)}
 				</HStack>
 			</ScaleFade>
