@@ -11,6 +11,9 @@ import {
 } from "@chakra-ui/react";
 
 const DrawerSections = ({ isOpen, onClose }) => {
+    const handleClick = (route) => {
+        onClose();
+    }
 	return (
 		<Drawer
 			isOpen={isOpen}
