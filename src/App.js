@@ -14,9 +14,9 @@ function App() {
 	return (
 		<ChakraProvider>
 			<Routes>
-        <Route path="/" element={<Welcome />} />
-        <Route path="/primer-beso" element={<PrimerBeso />} />
-      </Routes>
+				<Route path="/nosotros" element={<Welcome />} />
+				<Route path="/primer-beso" element={<PrimerBeso />} />
+			</Routes>
 		</ChakraProvider>
 	);
 }
