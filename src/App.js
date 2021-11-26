@@ -7,7 +7,7 @@ import Welcome from "./components/pages/Welcome";
 import PrimerBeso from "./components/pages/PrimerBeso";
 import TeEncontre from "./components/pages/TeEncontre";
 
-export const color1Atom = atomWithStorage("color1", "teal");
+export const color1Atom = atomWithStorage("color1", "cyan");
 
 function App() {
 	return (
