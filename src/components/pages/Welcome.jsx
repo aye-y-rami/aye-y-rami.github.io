@@ -4,7 +4,7 @@ import { Text, VStack } from "@chakra-ui/react";
 
 const Welcome = () => {
 	return (
-		<Page isWelcome nextSection={{ name: "Primer beso", route: "primer-beso" }}>
+		<Page nextSection={{ name: "Primer beso", route: "primer-beso" }}>
 			<Text fontSize="2xl" textAlign="center">
 				Bienvenida a nuestra página
 			</Text>
@@ -29,8 +29,8 @@ const Welcome = () => {
 					proyecto que seguramente irá creciendo.
 				</Text>
 				<Text>
-					Ah, y si no te gusta el color rosa ñoño que elegí podés cambiarlo
-					desde el botón del pincelito.
+					Ah, y si el cian ya no es tu color favorito podés cambiarlo desde el
+					botón del pincelito.
 				</Text>
 				<Text textAlign="end" fontStyle="italic" w="100%">
 					Con amor, Rami.

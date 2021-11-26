@@ -1,14 +1,11 @@
 import "./App.css";
-import { Box, Text } from "@chakra-ui/react";
-import Header from "./components/general/Header";
-import PrincipalImage from "./components/general/PrincipalImage";
-import TextBody from "./components/general/TextBody";
 import { ChakraProvider } from "@chakra-ui/react";
 import { Routes, Route } from "react-router";
 import Welcome from "./components/pages/Welcome";
 import PrimerBeso from "./components/pages/PrimerBeso";
+import { atomWithStorage } from 'jotai/utils'
 
-export let color1 = localStorage.getItem("color1") || "pink";
+export const color1Atom = atomWithStorage("color1", "teal");
 
 function App() {
 	return (
