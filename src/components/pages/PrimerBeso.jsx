@@ -6,7 +6,9 @@ const PrimerBeso = () => {
 	return (
 		<Page
 			previousSection={{ name: "Bienvenida", route: "" }}
+			nextSection={{ name: "Te encontré", route: "te-encontre" }}
 			imagePath="images/primer-beso.jpg"
+			title="Primer beso"
 		>
 			<VStack spacing={5}>
 				<Text>

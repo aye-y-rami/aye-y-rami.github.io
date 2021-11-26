@@ -9,6 +9,7 @@ import {
 	DrawerContent,
 	DrawerCloseButton,
 	Text,
+	Divider,
 } from "@chakra-ui/react";
 import { useAtom } from "jotai";
 import { color1Atom } from "../../App";
@@ -24,6 +25,17 @@ const DrawerSections = ({ isOpen, onClose }) => {
 				<DrawerHeader>Secciones</DrawerHeader>
 
 				<DrawerBody>
+					<Link to="/">
+						<Button
+							variant="ghost"
+							w="100%"
+							justifyContent="flex-start"
+							onClick={onClose}
+						>
+							Bienvenida
+						</Button>
+					</Link>
+					<Divider borderColor="gray" />
 					<Link to="/primer-beso">
 						<Button
 							variant="ghost"
@@ -32,6 +44,17 @@ const DrawerSections = ({ isOpen, onClose }) => {
 							onClick={onClose}
 						>
 							Primer beso
+						</Button>
+					</Link>
+					<Divider borderColor="gray" />
+					<Link to="/te-encontre">
+						<Button
+							variant="ghost"
+							w="100%"
+							justifyContent="flex-start"
+							onClick={onClose}
+						>
+							Te encontré
 						</Button>
 					</Link>
 				</DrawerBody>
