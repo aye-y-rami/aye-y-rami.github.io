@@ -1,6 +1,6 @@
 import React from "react";
 import Page from "../general/Page";
-import { Text, VStack } from "@chakra-ui/react";
+import { Text, VStack, Image } from "@chakra-ui/react";
 
 const Welcome = () => {
 	return (
@@ -15,9 +15,10 @@ const Welcome = () => {
 					hacer el mejor intento en plasmar el amor que hemos desprendido
 					durante ya más de 3 años. Es una tarea difícil desde ya, porque han
 					pasado un millón de cosas en todo este tiempo y realmente hay mucho
-					amor, ñoñadas, comedia y hasta tragedia que contar. Tomalo como un
-					altar creado para inmortalizar nuestro amol. Pase lo que pase, jamás
-					voy a dar de baja esta página.
+					amor, ñoñadas, comedia y hasta tragedia que contar. Quizás hasta cosas
+					que no sabías, contadas desde mi punto de vista. Tomalo como un altar
+					creado para inmortalizar nuestro amol. Pase lo que pase, jamás voy a
+					dar de baja esta página.
 				</Text>
 				<Text>
 					Abajo de cada sección voy a dejar dos botones para volver a la sección
@@ -35,6 +36,13 @@ const Welcome = () => {
 					Ah, y si el cian ya no es tu color favorito podés cambiarlo desde el
 					botón del pincelito.
 				</Text>
+				<a href="images/ositos-abrazo.gif" target="_blank" rel="noreferrer">
+					<Image
+						rounded="lg"
+						boxShadow="lg"
+						src="images/ositos-abrazo.gif"
+					/>
+				</a>
 				<Text textAlign="end" fontStyle="italic" w="100%">
 					Con amor, Rami.
 				</Text>

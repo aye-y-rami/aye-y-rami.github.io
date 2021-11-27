@@ -57,9 +57,22 @@ const DrawerSections = ({ isOpen, onClose }) => {
 							Te encontré
 						</Button>
 					</Link>
+					<Divider borderColor="gray" />
+					<Link to="/estas-viva">
+						<Button
+							variant="ghost"
+							w="100%"
+							justifyContent="flex-start"
+							onClick={onClose}
+						>
+							¡Estás viva!
+						</Button>
+					</Link>
 				</DrawerBody>
 				<DrawerFooter>
-					<Text fontStyle="italic" fontSize="sm">Creo que te amo demasiado...</Text>
+					<Text fontStyle="italic" fontSize="sm">
+						Creo que te amo demasiado...
+					</Text>
 				</DrawerFooter>
 			</DrawerContent>
 		</Drawer>

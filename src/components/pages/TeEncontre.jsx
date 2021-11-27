@@ -6,8 +6,9 @@ const TeEncontre = () => {
 	return (
 		<Page
 			previousSection={{ name: "Primer beso", route: "primer-beso" }}
+			nextSection={{ name: "¡Estás viva!", route: "estas-viva" }}
 			imagePath="images/te-encontre.jpg"
-            title="Te encontré"
+			title="Te encontré"
 		>
 			<VStack spacing={5}>
 				<Text>
@@ -25,11 +26,13 @@ const TeEncontre = () => {
 					Vi que realmente tu nombre en la app era "Aye", y que tenías de estado
 					una parte de una de mis canciones favoritas de Soda Stereo.
 				</Text>
-				<Image
-					src="images/estado-whatsapp.jpg"
-					borderRadius="10px"
-					boxShadow="lg"
-				/>
+				<a href="images/estado-whatsapp.jpg" target="_blank" rel="noreferrer">
+					<Image
+						src="images/estado-whatsapp.jpg"
+						borderRadius="10px"
+						boxShadow="lg"
+					/>
+				</a>
 				<Text>
 					<strong>
 						<i>Algún día vas a ser mi esposa</i>
@@ -59,15 +62,17 @@ const TeEncontre = () => {
 					pasado algo?
 				</Text>
 				<Box>
-					<Image
-						src="images/hacker-pepe.gif"
-						float="left"
-						w="40%"
-						p="5px"
-						mx="5px"
-						borderRadius="10px"
-						boxShadow="lg"
-					/>
+					<a href="images/hacker-pepe.gif" target="_blank" rel="noreferrer">
+						<Image
+							src="images/hacker-pepe.gif"
+							float="left"
+							w="40%"
+							p="5px"
+							mx="5px"
+							borderRadius="10px"
+							boxShadow="lg"
+						/>
+					</a>
 					<Text>
 						Y así comenzó mi búsqueda. Como recursos solo tenía tu primer
 						nombre, que estudiabas Fonoaudiología y que residías en Córdoba. Lo
@@ -87,15 +92,17 @@ const TeEncontre = () => {
 					<strong>No podía creer que haya funcionado.</strong>
 				</Text>
 				<Box>
-					<Image
-						src="images/instagram1.jpg"
-						float="right"
-						w="55%"
-						p="5px"
-						mx="5px"
-						borderRadius="10px"
-						boxShadow="lg"
-					/>
+					<a href="images/instagram1.jpg" target="_blank" rel="noreferrer">
+						<Image
+							src="images/instagram1.jpg"
+							float="right"
+							w="55%"
+							p="5px"
+							mx="5px"
+							borderRadius="10px"
+							boxShadow="lg"
+						/>
+					</a>
 					<Text w="100%">
 						Ahí estabas entre los primeros resultados,{" "}
 						<strong>con tus hermosos lentes y tus redondos cachetes.</strong>{" "}

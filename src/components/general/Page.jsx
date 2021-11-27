@@ -10,7 +10,14 @@ import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons";
 import { useAtom } from "jotai";
 import Footer from "./Footer";
 
-const Page = ({ children, imagePath, previousSection, nextSection, title }) => {
+const Page = ({
+	children,
+	imagePath,
+	imageDescription,
+	previousSection,
+	nextSection,
+	title,
+}) => {
 	const [color1] = useAtom(color1Atom);
 	const fadeIn = useRef();
 	useEffect(() => {
@@ -28,7 +35,12 @@ const Page = ({ children, imagePath, previousSection, nextSection, title }) => {
 					<Text fontSize="2xl" textAlign="center" fontWeight="bold">
 						{title}
 					</Text>
-					{imagePath && <PrincipalImage imagePath={imagePath} />}
+					{imagePath && (
+						<PrincipalImage
+							imagePath={imagePath}
+							imageDescription={imageDescription}
+						/>
+					)}
 					<TextBody>{children}</TextBody>
 				</Box>
 				<HStack justifyContent="space-around" paddingBottom="60px">
@@ -55,7 +67,11 @@ const Page = ({ children, imagePath, previousSection, nextSection, title }) => {
 								{nextSection.name}
 							</Button>
 						</Link>
-					) : <Text>Eso es todo, por ahora...</Text>}
+					) : (
+						<Text fontSize="sm" fontStyle="italic">
+							Eso es todo, por ahora...
+						</Text>
+					)}
 				</HStack>
 			</ScaleFade>
 			<Footer />
