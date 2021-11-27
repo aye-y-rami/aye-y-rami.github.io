@@ -56,6 +56,13 @@ const Header = () => {
 						<MenuItem
 							display="flex"
 							justifyContent="center"
+							onClick={() => handleChangeColor("gray")}
+						>
+							<Box bgColor="gray.300" h="35px" w="35px" borderRadius="50%" />
+						</MenuItem>
+						<MenuItem
+							display="flex"
+							justifyContent="center"
 							onClick={() => handleChangeColor("red")}
 						>
 							<Box bgColor="red.300" h="35px" w="35px" borderRadius="50%" />

@@ -49,7 +49,9 @@ const Page = ({
 							<Button
 								fontSize="sm"
 								colorScheme={color1}
-								textColor={color1 === "yellow" ? "black" : "white"}
+								textColor={
+									color1 === "yellow" || color1 === "gray" ? "black" : "white"
+								}
 								leftIcon={<ArrowBackIcon />}
 							>
 								{previousSection.name}
@@ -61,7 +63,9 @@ const Page = ({
 							<Button
 								fontSize="sm"
 								colorScheme={color1}
-								textColor={color1 === "yellow" ? "black" : "white"}
+								textColor={
+									color1 === "yellow" || color1 === "gray" ? "black" : "white"
+								}
 								rightIcon={<ArrowForwardIcon />}
 							>
 								{nextSection.name}
