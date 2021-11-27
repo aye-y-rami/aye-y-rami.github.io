@@ -21,7 +21,7 @@ const Header = () => {
 
 	const handleChangeColor = (color) => {
 		setColor1(color);
-	}
+	};
 	return (
 		<>
 			<HStack
@@ -33,34 +33,66 @@ const Header = () => {
 				px={5}
 				justifyContent="space-between"
 			>
-				<HamburgerIcon onClick={onOpen}>Prueba</HamburgerIcon>
+				<HamburgerIcon cursor="pointer" onClick={onOpen} />
 				<Menu>
 					<MenuButton marginTop="4px !important">
 						<Icon as={FaPaintBrush} />
 					</MenuButton>
-					<MenuList minW="0" w={"70px"} >
-						<MenuItem display="flex" justifyContent="center" onClick={() => handleChangeColor("cyan")}>
+					<MenuList minW="0" w={"70px"}>
+						<MenuItem
+							display="flex"
+							justifyContent="center"
+							onClick={() => handleChangeColor("cyan")}
+						>
 							<Box bgColor="cyan.300" h="35px" w="35px" borderRadius="50%" />
 						</MenuItem>
-						<MenuItem display="flex" justifyContent="center" onClick={() => handleChangeColor("blue")}>
+						<MenuItem
+							display="flex"
+							justifyContent="center"
+							onClick={() => handleChangeColor("blue")}
+						>
 							<Box bgColor="blue.300" h="35px" w="35px" borderRadius="50%" />
 						</MenuItem>
-						<MenuItem display="flex" justifyContent="center" onClick={() => handleChangeColor("red")}>
+						<MenuItem
+							display="flex"
+							justifyContent="center"
+							onClick={() => handleChangeColor("red")}
+						>
 							<Box bgColor="red.300" h="35px" w="35px" borderRadius="50%" />
 						</MenuItem>
-						<MenuItem display="flex" justifyContent="center" onClick={() => handleChangeColor("pink")}>
+						<MenuItem
+							display="flex"
+							justifyContent="center"
+							onClick={() => handleChangeColor("pink")}
+						>
 							<Box bgColor="pink.300" h="35px" w="35px" borderRadius="50%" />
 						</MenuItem>
-						<MenuItem display="flex" justifyContent="center" onClick={() => handleChangeColor("purple")}>
+						<MenuItem
+							display="flex"
+							justifyContent="center"
+							onClick={() => handleChangeColor("purple")}
+						>
 							<Box bgColor="purple.300" h="35px" w="35px" borderRadius="50%" />
 						</MenuItem>
-						<MenuItem display="flex" justifyContent="center" onClick={() => handleChangeColor("orange")}>
+						<MenuItem
+							display="flex"
+							justifyContent="center"
+							onClick={() => handleChangeColor("orange")}
+						>
 							<Box bgColor="orange.300" h="35px" w="35px" borderRadius="50%" />
 						</MenuItem>
-						<MenuItem display="flex" justifyContent="center" onClick={() => handleChangeColor("yellow")}>
+						<MenuItem
+							display="flex"
+							justifyContent="center"
+							onClick={() => handleChangeColor("yellow")}
+						>
 							<Box bgColor="yellow.300" h="35px" w="35px" borderRadius="50%" />
 						</MenuItem>
-						<MenuItem display="flex" justifyContent="center" onClick={() => handleChangeColor("green")}>
+						<MenuItem
+							display="flex"
+							justifyContent="center"
+							onClick={() => handleChangeColor("green")}
+						>
 							<Box bgColor="green.300" h="35px" w="35px" borderRadius="50%" />
 						</MenuItem>
 					</MenuList>
