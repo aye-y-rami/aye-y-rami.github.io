@@ -4,7 +4,7 @@ import { Box, Center } from "@chakra-ui/react";
 const TextBody = ({ children }) => {
 	return (
 		<Center py="20px">
-			<Box w="90%">
+			<Box maxW="90%" w="500px">
 				{children}
 			</Box>
 		</Center>

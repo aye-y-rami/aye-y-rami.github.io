@@ -20,7 +20,7 @@ const DrawerSections = ({ isOpen, onClose }) => {
 	return (
 		<Drawer isOpen={isOpen} placement="left" onClose={onClose}>
 			<DrawerOverlay />
-			<DrawerContent bgColor={`${color1}.100`}>
+			<DrawerContent bgColor={`${color1}.100`} minW="0" w="250px !important">
 				<DrawerCloseButton />
 				<DrawerHeader>Secciones</DrawerHeader>
 
@@ -59,7 +59,7 @@ const DrawerSections = ({ isOpen, onClose }) => {
 					</Link>
 				</DrawerBody>
 				<DrawerFooter>
-					<Text fontStyle="italic">Creo que te amo demasiado...</Text>
+					<Text fontStyle="italic" fontSize="sm">Creo que te amo demasiado...</Text>
 				</DrawerFooter>
 			</DrawerContent>
 		</Drawer>
