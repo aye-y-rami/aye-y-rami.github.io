@@ -7,6 +7,7 @@ const PrimeraCita = () => {
 		<Page
 			title="Primera cita"
 			previousSection={{ name: "¡Estás viva!", route: "estas-viva" }}
+			nextSection={{ name: "Segundo beso", route: "segundo-beso" }}
 			imagePath="images/tejas.jpg"
 			imageDescription="No saqué fotos de ese día asi que me tomé la libertad de hacer esta maravilla..."
 		>
@@ -30,7 +31,7 @@ const PrimeraCita = () => {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<Image src="images/mi-hermana-whatsapp.jpg" />
+						<Image src="images/mi-hermana-whatsapp.jpg" rounded="lg" />
 					</a>
 					<Text fontSize="sm" fontStyle="italic" mx={2} pb={2}>
 						Las dos misteriosas preguntas... ¿Recordás cuáles eran?
@@ -50,10 +51,10 @@ const PrimeraCita = () => {
 						w="60%"
 						float="right"
 						m={2}
-                        p="5px"
+						p="5px"
 					>
 						<a href="images/gato-timido.jpg" target="_blank" rel="noreferrer">
-							<Image src="images/gato-timido.jpg" />
+							<Image src="images/gato-timido.jpg" rounded="lg" />
 						</a>
 						<Text fontSize="sm" fontStyle="italic" mx={2} pb={2}>
 							Vos en ese preciso momento.
@@ -114,11 +115,11 @@ const PrimeraCita = () => {
 						<Image
 							src="images/gracias-original-whatsapp.jpg"
 							float="left"
-                            boxShadow="lg"
+							boxShadow="lg"
 							w="60%"
 							borderRadius="10px"
 							m={2}
-                            p="5px"
+							p="5px"
 						/>
 					</a>
 					<Text>

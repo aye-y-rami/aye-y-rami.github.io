@@ -79,6 +79,17 @@ const DrawerSections = ({ isOpen, onClose }) => {
 							Primera cita
 						</Button>
 					</Link>
+					<Divider borderColor="gray" />
+					<Link to="/segundo-beso">
+						<Button
+							variant="ghost"
+							w="100%"
+							justifyContent="flex-start"
+							onClick={onClose}
+						>
+							Segundo beso
+						</Button>
+					</Link>
 				</DrawerBody>
 				<DrawerFooter>
 					<Text fontStyle="italic" fontSize="sm">
