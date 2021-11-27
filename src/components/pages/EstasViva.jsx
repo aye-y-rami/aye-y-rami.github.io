@@ -6,6 +6,7 @@ const EstasViva = () => {
 	return (
 		<Page
 			previousSection={{ name: "Te encontré", route: "te-encontre" }}
+			nextSection={{ name: "Primera cita", route: "primera-cita" }}
 			imagePath="images/estas-viva-whatsapp.jpg"
 			imageDescription="Ese mítico 1 de octubre..."
 			title="¡Estás viva!"

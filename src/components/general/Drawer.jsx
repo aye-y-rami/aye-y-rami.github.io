@@ -68,6 +68,17 @@ const DrawerSections = ({ isOpen, onClose }) => {
 							¡Estás viva!
 						</Button>
 					</Link>
+					<Divider borderColor="gray" />
+					<Link to="/primera-cita">
+						<Button
+							variant="ghost"
+							w="100%"
+							justifyContent="flex-start"
+							onClick={onClose}
+						>
+							Primera cita
+						</Button>
+					</Link>
 				</DrawerBody>
 				<DrawerFooter>
 					<Text fontStyle="italic" fontSize="sm">

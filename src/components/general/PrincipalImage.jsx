@@ -15,7 +15,7 @@ const PrincipalImage = ({ imagePath, imageDescription }) => {
 					<Image src={imagePath} maxW="100%" />
 				</a>
 				{imageDescription && (
-					<Text fontSize="sm" fontStyle="italic">
+					<Text fontSize="sm" fontStyle="italic" mx={2}>
 						{imageDescription}
 					</Text>
 				)}
