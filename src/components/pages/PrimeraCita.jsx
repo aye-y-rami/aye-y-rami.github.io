@@ -114,6 +114,7 @@ const PrimeraCita = () => {
 						<Image
 							src="images/gracias-original-whatsapp.jpg"
 							float="left"
+                            boxShadow="lg"
 							w="60%"
 							borderRadius="10px"
 							m={2}
