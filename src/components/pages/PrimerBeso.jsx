@@ -1,4 +1,4 @@
-import { Text, VStack } from "@chakra-ui/react";
+import { Text, VStack, Image } from "@chakra-ui/react";
 import React from "react";
 import Page from "../general/Page";
 
@@ -37,13 +37,21 @@ const PrimerBeso = () => {
 				<Text>
 					A la salida tuviste la confianza de dejar que te tome de la cintura
 					porque confiaste en que te iba a tratar con respeto, lo cual jamás
-					olvidé. Mientras Uziel discutía con la prima de Carla que la estaba
+					olvidé. De hecho vos misma pusiste mi mano ahí, para que lo supiera.
+					Mientras Uziel discutía con la prima de Carla que la estaba
 					sosteniendo toda moribunda, nosotros simplemente hablamos a unos
 					metros de distancia de los demás.
 				</Text>
 				<Text w="100%" fontWeight="bold">
 					Hablamos...
 				</Text>
+				<a href="images/caminando.jpg" target="_blank" rel="noreferrer">
+					<Image
+						src="images/caminando.jpg"
+						borderRadius="10px"
+						boxShadow="lg"
+					/>
+				</a>
 				<Text>
 					Hablamos de nuestros gustos, nuestros deseos, lo que nos era
 					importante en la vida, qué queríamos de nuestro futuro, hasta incluso
