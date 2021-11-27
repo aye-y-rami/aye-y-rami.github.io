@@ -20,6 +20,16 @@ const Welcome = () => {
 					creado para inmortalizar nuestro amol. Pase lo que pase, jamás voy a
 					dar de baja esta página.
 				</Text>
+				<VStack>
+					<VStack rounded="lg" boxShadow="lg" overflow="hidden" m={2} p="5px">
+						<a href="images/up.gif" target="_blank" rel="noreferrer">
+							<Image src="images/up.gif" />
+						</a>
+						<Text fontSize="sm" fontStyle="italic" mx={2} pb={2}>
+							¿Y si lo vemos como nuestro libro de aventuras virtual?
+						</Text>
+					</VStack>
+				</VStack>
 				<Text>
 					Abajo de cada sección voy a dejar dos botones para volver a la sección
 					anterior o ir a la siguiente. También podés tocar el ícono de bien
