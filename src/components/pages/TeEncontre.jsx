@@ -31,6 +31,7 @@ const TeEncontre = () => {
 						src="images/estado-whatsapp.jpg"
 						borderRadius="10px"
 						boxShadow="lg"
+						p="5px"
 					/>
 				</a>
 				<Text>

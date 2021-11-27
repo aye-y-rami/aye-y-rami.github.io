@@ -40,6 +40,7 @@ const EstasViva = () => {
 						src="images/arreglar-telefono-whatsapp.jpg"
 						borderRadius="10px"
 						boxShadow="lg"
+                        p="5px"
 					/>
 				</a>
 				<Text>
@@ -57,10 +58,11 @@ const EstasViva = () => {
 						<Image
 							src="images/me-caiste-bien-whatsapp.jpg"
 							float="left"
-							w="65%"
-							p="5px"
+							w="60%"
+                            p="5px"
 							borderRadius="10px"
 							boxShadow="lg"
+                            m={2}
 						/>
 					</a>
 					<Text>

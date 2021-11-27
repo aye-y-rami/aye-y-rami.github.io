@@ -41,6 +41,7 @@ const Welcome = () => {
 						rounded="lg"
 						boxShadow="lg"
 						src="images/ositos-abrazo.gif"
+						p="5px"
 					/>
 				</a>
 				<Text textAlign="end" fontStyle="italic" w="100%">
