@@ -61,16 +61,14 @@ const SegundoBeso = () => {
 					psicológica y te pregunté a mi manera lo que había ido a
 					preguntarte... Fue algo así...
 				</Text>
-				<Text fontStyle="italic">
-					Aye... ¿Sólo nos vamos a besar cuando tengamos litros de alcohol en
-					sangre?
-				</Text>
+				<Box boxShadow="xl" rounded="lg">
+					<Text fontStyle="italic" p={2}>
+						Aye... ¿Sólo nos vamos a besar cuando tengamos litros de alcohol en
+						sangre?
+					</Text>
+				</Box>
 				<Box>
-					<a
-						href="images/timida.gif"
-						target="_blank"
-						rel="noreferrer"
-					>
+					<a href="images/timida.gif" target="_blank" rel="noreferrer">
 						<Image
 							src="images/timida.gif"
 							borderRadius="10px"
@@ -87,9 +85,11 @@ const SegundoBeso = () => {
 						confianza, hasta que finalmente me dijiste...
 					</Text>
 				</Box>
-				<Text fontStyle="italic" w="100%">
-					Mmm, bueno...
-				</Text>
+				<Box boxShadow="xl" rounded="lg" w="100%">
+					<Text fontStyle="italic" w="100%" p={2}>
+						Mmm, bueno...
+					</Text>
+				</Box>
 				<Text>
 					Y te agarré de la cintura, nos miramos fijamente y simplemente
 					acercamos nuestros labios. Lo demás vino solo. Nos besamos un buen
